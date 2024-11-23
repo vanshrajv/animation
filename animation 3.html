@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Circle</title>
+    <style>
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(241, 129, 129);
+            border-radius: 50%;
+            animation: bounce 0.9s infinite;
+            position: relative;
+            margin: 50px auto;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>
